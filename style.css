@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Libertinus Sans", sans-serif;
+}
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    background-color:#134b5f;
+}
+.wrapper{
+    width:610px;
+    background-color: rgb(201, 200, 200);
+    border-radius: 15px;
+    padding:30px 30px 25px;
+    border:2px solid black;
+}
+.wrapper:hover{
+    border: 5px solid black; 
+}
+.wrapper header{
+    font-size: 35px;
+    font-weight:600;
+    text-align: center;
+}
+.content{
+    margin:35px 0;
+}
+.quote-area{
+    display:flex;
+    justify-content: center;
+}
+.quote{
+    font-size: larger;
+    text-align: center;
+}
+.quote-area i:first-child{
+    margin-right: 10px;
+}
+.quote-area i:last-child{
+    margin-left: 10px;
+}
+.author{
+    display: flex;
+    justify-content: flex-end;
+    font-style:italic;
+}
+.author span:first-child{
+    margin: -7px 5px 0 0;
+}
+.buttons{
+    border-top:1px solid #cccccc;
+    padding: 15px;
+    margin-top: 20px;
+}
+.features{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.features ul{
+    display: flex;
+
+}
+.features li{
+    list-style:none;
+    margin:2px 5px;
+    height:47px;
+    width:47px;
+    border:2px solid black;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.features li:hover{
+    color:white;
+    background-color: #134b5f;
+}
+.features button{
+    border:none;
+    outline: none;
+    background-color: black;
+    padding:15px 20px;
+    color:white;
+    font-size: large;
+    border-radius: 40px;
+    cursor: pointer;
+    transition:all 0.3s ease;
+}
+.features button:hover{
+    color:white;
+    background-color: #1d708e;
+}
+button.loading{
+    opacity:0.7;
+    pointer-events:none;
+}
